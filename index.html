@@ -6,6 +6,12 @@
     <!-- <link rel="shortcut icon" href="./img/chuu.ico" type="image/x-icon" /> -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
     <script src="./js/main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/706189c8da.js"
@@ -36,9 +42,6 @@
             <li class="nav__item">
               <a class="nav__link" href="#education">Education</a>
             </li>
-            <!-- <li class="nav__item">
-              <a class="nav__link" href="#contact">Contact</a>
-            </li> -->
           </ul>
         </div>
         <div class="nav__toggle" id="nav-toggle">
@@ -49,268 +52,310 @@
 
     <main>
       <!-- Home -->
-      <section class="home container section" id="home">
+      <section class="home section bg-lightBlue" id="home">
         <!-- home data -->
-        <div class="home__data">
-          <!-- <h2 id="typeit" class="home__title"></h2> -->
-          <h2 class="home__title">프론트엔드 개발자, 김장겸</h2>
+        <div class="home__container container">
+          <div class="home__data">
+            <!-- <div id="typeit" class="home__title"></div> -->
+          <h2 class="home__title">🖥️<br />프론트엔드 개발자<br />김장겸</h2>
+          <!-- <div id="typeit" class="home__texts"></div> -->
           <div class="home__texts">
             개발은 적절한 기술, 경험, 그리고 섬세한 감각에서 완성된다고
             생각합니다.<br />
             사용자, 팀, 비즈니스를 이해하며 더 나은 결과를 만드는 프론트엔드
             개발자입니다.
+            </div>
           </div>
-
-          <!-- <a class="button" href="#contact">contact</a>
-          <div class="home__social">
-            <a href="" target="_blank" title="노션 링크">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-notion home__social-icon"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#2c3e50"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M11 17.5v-6.5h.5l4 6h.5v-6.5" />
-                <path
-                  d="M19.077 20.071l-11.53 .887a1 1 0 0 1 -.876 -.397l-2.471 -3.294a1 1 0 0 1 -.2 -.6v-10.741a1 1 0 0 1 .923 -.997l11.389 -.876a2 2 0 0 1 1.262 .33l1.535 1.023a2 2 0 0 1 .891 1.664v12.004a1 1 0 0 1 -.923 .997z"
-                />
-                <path d="M4.5 5.5l2.5 2.5" />
-                <path d="M20 7l-13 1v12.5" />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/codedot28"
-              target="_blank"
-              title="깃허브 링크"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-github home__social-icon"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#2c3e50"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                />
-              </svg>
-            </a>
-          </div> -->
-        </div>
-        <!-- home Image-->
-        <!-- <img class="home__img" src="./img/home/home-chuu.jpg" alt="홈이미지" /> -->
       </section>
 
       <!-- about -->
-      <section class="about section bg-trey-1" id="work">
-        <h2 class="section__title">Work Experience</h2>
-        <div class="about__container container">
-          <div class="about__data">
+      <section class="about section" id="work">
+        <div class="container">
+          <h2 class="section__title">🗂️ Work Experience</h2>
+          </div>
+          <div class="container">
+            <div class="about__data">
             <h3 class="about__subtitle">
-              [싸이웰시스템] | 프론트엔드 개발자 (대리) | 2022.04 ~ 현재 재직중
+              <div>🏢 [싸이웰시스템] | 프론트엔드 개발자(대리)</div> 
+              <div>2022.04 ~ 현재 재직중</div>
             </h3>
             <article class="about_text">
-              <span class="work-period"
-                >CIS(CywellSystem Information System) | 2024.12 ~ 현재</span
-              >
-              <span class="work-role"
-                >역할: 사내 영업/엔지니어 활동 관리 시스템 기능 고도화 및 안정화
-                (프론트엔드 담당)</span
-              >
-              <strong>주요 성과 및 업무:</strong>
-              <ul>
-                <li>
-                  주도: Angular 기반 시스템 전반의 유지보수, 성능 개선 및 신규
-                  기능 개발 리딩
-                </li>
-                <li>
-                  설계 및 구현: 신규 '정기 점검 관리' 모듈 전체 기능 (점검 주기
-                  설정, 항목 관리, 결과 기록/조회 등)
-                </li>
-                <li>
-                  개선: 기존 핵심 기능(엔지니어 활동 관리 등) 안정화 및 사용자
-                  피드백 기반 기능
-                </li>
-                <li>
-                  개선 적용: RxJS 활용 비동기/데이터 스트림 관리 및 Angular
-                  서비스를 통한 상태/비즈니스 로직 구현
-                </li>
-                <li>
-                  구축: Ant Design기반 반응형 UI/UX (기존 화면 개선 및 신규 기능
-                  적용), 데이터 시각화
-                </li>
-              </ul>
-              <strong>사용 기술:</strong>
-              <span class="tech-stack">Angular</span>
-              <span class="tech-stack">RxJS</span>
-              <span class="tech-stack">Ant Design(Ng-Zorro)</span>
-              <span class="tech-stack">Figma</span>
+              <div class="work-period">
+                <div>CIS(CywellSystem Information System)</div>
+                <div>2024.12 ~ 현재</div>
+                </div>
+             
+                <div class="work-padding">
+              <div class="work-role">
+                <div>역할</div> 
+                <div>사내 영업/엔지니어 활동 관리 시스템 기능 고도화 및 안정화
+                (프론트엔드 담당)</div>
+              </div>
+              <div class="work-role">
+                <div>주요 성과 및 업무</div>
+                <div>
+                  <ul>
+                    <li>
+                      주도: Angular 기반 시스템 전반의 유지보수, 성능 개선 및 신규
+                      기능 개발 리딩
+                    </li>
+                    <li>
+                      설계 및 구현: 신규 '정기 점검 관리' 모듈 전체 기능 (점검 주기
+                      설정, 항목 관리, 결과 기록/조회 등)
+                    </li>
+                    <li>
+                      개선: 기존 핵심 기능(엔지니어 활동 관리 등) 안정화 및 사용자
+                      피드백 기반 기능
+                    </li>
+                    <li>
+                      개선 적용: RxJS 활용 비동기/데이터 스트림 관리 및 Angular
+                      서비스를 통한 상태/비즈니스 로직 구현
+                    </li>
+                    <li>
+                      구축: Ant Design기반 반응형 UI/UX (기존 화면 개선 및 신규 기능
+                      적용), 데이터 시각화
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="work-role">
+                <div>사용 기술</div>
+                <div>
+                  <span class="tech-stack">Angular</span>
+                  <span class="tech-stack">RxJS</span>
+                  <span class="tech-stack">Ant Design(Ng-Zorro)</span>
+                  <span class="tech-stack">Figma</span>
+                </div>
+              </div>
+            </div>
+              
             </article>
 
             <article class="about_text">
-              <span class="work-period"
-                >KICE(교육데이터 플랫폼) | 2024.08 ~ 2024.11</span
-              >
-              <span class="work-role"
-                >역할: KICE 교육 데이터 포털 시스템 프론트엔드 아키텍처 설계 및
-                리드 개발</span
-              >
-              <strong>주요 성과 및 업무:</strong>
-              <ul>
-                <li>
-                  최적화: React/Next.js 기반 SSR, 페이징, 캐싱 적용으로 연간
-                  10만 건 이상 데이터 처리 성능 개선
-                </li>
-                <li>
-                  구현: 통계 자료 기반 데이터 처리 및 시각화, 문서 변환 결과
-                  화면화, 전체 자료/변수 검색 기능 개발
-                </li>
-                <li>
-                  개발: Tailwind CSS 활용 반응형 UI, 관리자 페이지 기능(공지,
-                  팝업, 관리자 관리) 개발
-                </li>
-              </ul>
-              <a
-                href="https://www.notion.so/KICE-1336aba52d4580848809d3037482f02e?pvs=21"
-                target="_blank"
-              >
-                KICE관련 개발 기록 링크(바로가기)
-              </a>
-              <br />
-              <strong>사용 기술:</strong>
-              <span class="tech-stack">React</span>
-              <span class="tech-stack">Next.js</span>
-              <span class="tech-stack">Tailwind CSS</span>
-              <span class="tech-stack">Flowbite</span>
+              <div class="work-period">
+                <div>KICE(교육데이터 플랫폼)</div>
+                <div>2024.08 ~ 2024.11 <span class="months">(4개월)</span></div>
+              </div>
+            
+              <div class="work-padding">
+                <div class="work-role">
+                  <div>역할</div>
+                  <div>
+                    KICE 교육 데이터 포털 시스템 프론트엔드 아키텍처 설계 및 리드 개발
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>주요 성과 및 업무</div>
+                  <div>
+                    <ul>
+                      <li>
+                        최적화: React/Next.js 기반 SSR, 페이징, 캐싱 적용으로 데이터 처리 속도 및 안정성 향상
+                      </li>
+                      <li>
+                        구현: 통계 자료 기반 데이터 처리 및 시각화, 문서 변환 결과
+                        화면화, 전체 자료/변수 검색 기능 개발
+                      </li>
+                      <li>
+                        개발: Tailwind CSS 활용 반응형 UI, 관리자 페이지 기능(공지,
+                        팝업, 관리자 관리) 개발
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>사용 기술</div>
+                  <div>
+                    <span class="tech-stack">React</span>
+                    <span class="tech-stack">Next.js</span>
+                    <span class="tech-stack">Tailwind CSS</span>
+                    <span class="tech-stack">Flowbite</span>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>링크</div>
+                  <div>
+                    <a href="https://www.notion.so/KICE-1336aba52d4580848809d3037482f02e?pvs=21" target="_blank">
+                      KICE관련 개발 기록 링크(바로가기)
+                    </a>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <article class="about_text">
-              <span class="work-period"
-                >한국쌀가공식품협회(공급관리시스템) 2024.02 ~ 2024.08</span
-              >
-              <span class="work-role"
-                >역할: 공급관리시스템 통합 개발 및 업무 시스템 고도화
-                (프론트엔드 담당)</span
-              >
-              <strong>주요 성과 및 업무:</strong>
-              <ul>
-                <li>
-                  개발: 신규 페이지 및 UI 다수 설계/개발 (Tree UI, 프로그램 룰
-                  관리, 규제 신고 센터, 설문 동기화 등)
-                </li>
-                <li>
-                  최적화: Tree UI 비동기 데이터 처리로 대규모 데이터 로딩 성능
-                  개선, HttpClient 기반 RESTful API 통신 최적화
-                </li>
-                <li>
-                  개선: 조건/규칙 기반 동적 UI 구현으로 사용자 편의성 증대,
-                  데이터 처리 흐름 시각화로 UX 개선
-                </li>
-                <li>
-                  협업: 백엔드팀과 API 설계/최적화, 디자이너와 Ant
-                  Design/PrimeNg 기반 UI 구현
-                </li>
-              </ul>
-              <a
-                href="https://www.notion.so/31f679ad3c8447dc8d771d62b078ff74?pvs=21"
-                target="_blank"
-              >
-                신규페이지 구축 개발 기록 링크(바로가기)
-              </a>
-              <br />
-              <strong>사용 기술:</strong>
-              <span class="tech-stack">Angular</span>
-              <span class="tech-stack">PrimeNg</span>
-              <span class="tech-stack">Ant Design(Ng-Zorro)</span>
-              <span class="tech-stack">TypeScript</span>
+              <div class="work-period">
+                <div>한국쌀가공식품협회(공급관리시스템)</div>
+                <div>2024.02 ~ 2024.08 <span class="months">(6개월)</span></div>
+              </div>
+            
+              <div class="work-padding">
+                <div class="work-role">
+                  <div>역할</div>
+                  <div>
+                    공급관리시스템 통합 개발 및 업무 시스템 고도화 (프론트엔드 담당)
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>주요 성과 및 업무</div>
+                  <div>
+                    <ul>
+                      <li>
+                        개발: 신규 페이지 및 UI 다수 설계/개발 (Tree UI, 프로그램 룰
+                        관리, 규제 신고 센터, 설문 동기화 등)
+                      </li>
+                      <li>
+                        최적화: Tree UI 비동기 데이터 처리로 대규모 데이터 로딩 성능
+                        개선, HttpClient 기반 RESTful API 통신 최적화
+                      </li>
+                      <li>
+                        개선: 조건/규칙 기반 동적 UI 구현으로 사용자 편의성 증대,
+                        데이터 처리 흐름 시각화로 UX 개선
+                      </li>
+                      <li>
+                        협업: 백엔드팀과 API 설계/최적화, 디자이너와 Ant
+                        Design/PrimeNg 기반 UI 구현
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>사용 기술</div>
+                  <div>
+                    <span class="tech-stack">Angular</span>
+                    <span class="tech-stack">PrimeNg</span>
+                    <span class="tech-stack">Ant Design(Ng-Zorro)</span>
+                    <span class="tech-stack">TypeScript</span>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>링크</div>
+                  <div>
+                    <a href="https://www.notion.so/31f679ad3c8447dc8d771d62b078ff74?pvs=21" target="_blank">
+                      신규페이지 구축 개발 기록 링크(바로가기)
+                    </a>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <article class="about_text">
-              <span class="work-period"
-                >삼성화재(Biz룰 모니터링 시스템) 2023.10 ~ 2024.02</span
-              >
-              <span class="work-role"
-                >역할: Biz룰 모니터링 시스템 신규 구축 (프론트엔드 담당)</span
-              >
-              <strong>주요 성과 및 업무:</strong>
-              <ul>
-                <li>
-                  개발: Vue.js 기반 반응형 인터페이스 및 대시보드(Chart.js 활용)
-                  포함 총 9개 페이지 구현
-                </li>
-                <li>
-                  구현: 삼성화재 UX 규격 준수 UI, 발생 메시지
-                  상태별(정보/경고/심각) 테이블 알림 기능, 아코디언 UI, 모달 창
-                  등 구현
-                </li>
-                <li>활용: 자체 프레임워크(넥서스) 환경 개발 경험</li>
-              </ul>
-
-              <strong>사용 기술:</strong>
-              <span class="tech-stack">Vue2</span>
-              <span class="tech-stack">JavaScript</span>
-              <span class="tech-stack">Chart.js</span>
-              <span class="tech-stack">Jira</span>
-              <span class="tech-stack">bitbucket</span>
+              <div class="work-period">
+                <div>삼성화재(Biz룰 모니터링 시스템)</div>
+                <div>2023.10 ~ 2024.02 <span class="months">(5개월)</span></div>
+              </div>
+            
+              <div class="work-padding">
+                <div class="work-role">
+                  <div>역할</div>
+                  <div>
+                    Biz룰 모니터링 시스템 신규 구축 (프론트엔드 담당)
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>주요 성과 및 업무</div>
+                  <div>
+                    <ul>
+                      <li>
+                        개발: Vue.js 기반 반응형 인터페이스 및 대시보드(Chart.js 활용)
+                        포함 총 9개 페이지 구현
+                      </li>
+                      <li>
+                        구현: 삼성화재 UX 규격 준수, 발생 메시지
+                        상태별(정보/경고/심각) 테이블 알림 기능, 아코디언 UI, 모달 창
+                        등 구현
+                      </li>
+                      <li>활용: 자체 프레임워크(넥서스) 환경 개발 경험</li>
+                    </ul>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>사용 기술</div>
+                  <div>
+                    <span class="tech-stack">Vue2</span>
+                    <span class="tech-stack">JavaScript</span>
+                    <span class="tech-stack">Chart.js</span>
+                    <span class="tech-stack">Jira</span>
+                    <span class="tech-stack">bitbucket</span>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <article class="about_text">
-              <span class="work-period"
-                >삼한국쌀가공식품협회 홈페이지(KRFA) 2022.10 ~ 2023.10</span
-              >
-              <span class="work-role"
-                >역할: 차세대 홈페이지 신규 개발/구축 및 유지보수 (프론트엔드
-                담당)</span
-              >
-              <strong>주요 성과 및 업무:</strong>
-              <ul>
-                <li>
-                  구현: Figma 디자인 기반 웹 화면 구현, 미디어쿼리 활용 반응형
-                  레이아웃 구축
-                </li>
-                <li>
-                  적용: Bootstrap 활용 동적/시각적 요소 구현, Thymeleaf 활용
-                  서버 사이드 동적 메뉴 생성
-                </li>
-                <li>
-                  개선: 홈 화면 등 주요 UI 컴포넌트화 및 재사용성 증대, 품평회
-                  페이지 등 유지보수 진행
-                </li>
-              </ul>
-
-              <strong>사용 기술:</strong>
-              <span class="tech-stack">HTML</span>
-              <span class="tech-stack">JavaScript</span>
-              <span class="tech-stack">css</span>
-              <span class="tech-stack">Thymeleaf</span>
-              <span class="tech-stack">bootstrap</span>
-              <span class="tech-stack">figma</span>
-
-              <strong>URL:</strong>
-              <a href="https://www.krfa.or.kr/" target="_blank">
-                한국쌀가공식품협회
-              </a>
+              <div class="work-period">
+                <div>한국쌀가공식품협회 홈페이지(KRFA)</div>
+                <div>2022.10 ~ 2023.10 <span class="months">(12개월)</span></div>
+              </div>
+            
+              <div class="work-padding">
+                <div class="work-role">
+                  <div>역할</div>
+                  <div>
+                    차세대 홈페이지 신규 개발/구축 및 유지보수 (프론트엔드 담당)
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>주요 성과 및 업무</div>
+                  <div>
+                    <ul>
+                      <li>
+                        구현: Figma 디자인 기반 웹 화면 구현, 미디어쿼리 활용 반응형
+                        레이아웃 구축
+                      </li>
+                      <li>
+                        적용: Bootstrap 활용 동적/시각적 요소 구현, Thymeleaf 활용
+                        서버 사이드 동적 메뉴 생성
+                      </li>
+                      <li>
+                        개선: 홈 화면 등 주요 UI 컴포넌트화 및 재사용성 증대, 품평회
+                        페이지 등 유지보수 진행
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>사용 기술</div>
+                  <div>
+                    <span class="tech-stack">HTML</span>
+                    <span class="tech-stack">JavaScript</span>
+                    <span class="tech-stack">css</span>
+                    <span class="tech-stack">Thymeleaf</span>
+                    <span class="tech-stack">bootstrap</span>
+                    <span class="tech-stack">figma</span>
+                  </div>
+                </div>
+            
+                <div class="work-role">
+                  <div>URL</div>
+                  <div>
+                    <a href="https://www.krfa.or.kr/" target="_blank">
+                      한국쌀가공식품협회
+                    </a>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
       <!-- skills -->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
+      <section class="skills section bg-lightBlue" id="skills">
+        <div class="container">
+          <h2 class="section__title">🕹️ Skills</h2>
+        </div>
+       
         <div class="skills__container container">
           <div class="skills__content">
             <div class="skills__category">
@@ -365,14 +410,20 @@
       </section>
 
       <section class="education section bg-trey-1" id="education">
-        <h2 class="section__title">Education</h2>
-        <div class="education__container container">
-          <div class="education__data">
+        <div class="container">
+          <h2 class="section__title">📚 Education</h2>
+        </div>
+      
+        <div class="container">
+         
             <article class="education__item">
-              <span class="education__period"
-                >코드스테이츠 (Code States) | 2021.08 ~ 2022.02</span
-              >
-              <span class="education__name">Software Engineering Bootcamp</span>
+              <div class="education__period"
+                >
+                <div>코드스테이츠 (Code States)</div>
+                <div>2021.08 ~ 2022.02</div>                
+                </div>
+              <div class="work-padding">
+              <div class="education__name">Software Engineering Bootcamp</div>
               <div class="education__details">
                 <p>프론트엔드 개발 심화 과정 수료 (JavaScript, React)</p>
                 <ul>
@@ -380,84 +431,27 @@
                   <li>Git/GitHub을 활용한 협업 및 버전 관리 경험</li>
                 </ul>
               </div>
+            </div>
             </article>
 
             <article class="education__item">
-              <span class="education__period"
-                >내일배움 재직자 (그린컴퓨터 학원) | 2020.02 ~ 2020.07</span
-              >
+              <div class="education__period">
+              <div>내일배움 재직자 (그린컴퓨터 학원) </div>
+              <div>2020.02 ~ 2020.07</div>
+                </div>
+                <div class="work-padding">
               <span class="education__name">프론트엔드 개발 과정</span>
               <div class="education__details">
                 <p>웹 개발 기본 과정 수료 (HTML, CSS, JavaScript)</p>
               </div>
+              </div>
             </article>
-          </div>
+          
         </div>
       </section>
-
-      <!-- work -->
-      <!-- <section class="work section bg-trey-1" id="work">
-        <h2 class="section__title">Work</h2>
-        <div class="work__container container">
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-          <a class="work__link" href="https://www.naver.com/" target="_blank">
-            <img class="work__img" src="./img/work/naver.png" alt="" />
-          </a>
-        </div>
-      </section> -->
-      <!-- contact -->
-      <!-- <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <div class="contact__container container">
-          <form id="contactForm" name="contactForm" class="contact__form">
-            <input
-              class="contact__input"
-              type="text"
-              name="name"
-              placeholder="이름"
-              required
-            />
-            <input
-              class="contact__input"
-              type="text"
-              name="subject"
-              placeholder="제목"
-              required
-            />
-            <textarea
-              class="contact__input"
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="내용"
-              required
-            ></textarea>
-            <button class="contact__button button">보내기</button>
-          </form>
-        </div>
-      </section>
-      <button class="floating-button" id="floating-button">
-        <i class="fa-solid fa-arrow-up floating-button-icon"></i>
-      </button> -->
     </main>
 
     <footer class="footer">
-      <!-- <p class="footer__title">test</p> -->
       <div class="footer__social">
         <!-- 노션 아이콘 -->
         <a

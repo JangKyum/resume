@@ -76,12 +76,16 @@ scrollReveal.reveal('.skills__category, .education__item', {
 const typeitElement = document.getElementById('typeit');
 if (typeitElement) {
   const typeit = new TypeIt('#typeit', {
-    speed: 70,
+    speed: 40,
     startDelay: 1300,
     waitUntilVisible: true,
   });
 
-  typeit.type('<strong class="home__title-color">테스트용</strong>').go();
+  typeit
+    .type(
+      '<div>개발은 적절한 기술, 경험, 그리고 섬세한 감각에서 완성된다고 생각합니다.<br/>사용자, 팀, 비즈니스를 이해하며 더 나은 결과를 만드는 프론트엔드 개발자입니다.</div>',
+    )
+    .go();
 }
 
 // // 이메일
