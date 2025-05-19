@@ -4,6 +4,8 @@
 **Home / Work Experience / Skills / Education** 섹션으로 구성되어 있으며,<br/>
 사용자 중심의 깔끔한 UI와 스크롤 효과를 통해 정보 전달력을 높였습니다.
 
+📌 포트폴리오 바로가기: [https://jangkyum.github.io/resume/](https://jangkyum.github.io/resume/)
+
 ---
 
 ## ✨ 주요 특징
