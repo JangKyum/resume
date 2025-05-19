@@ -96,24 +96,17 @@
                 <div>
                   <ul>
                     <li>
-                      주도: Angular 기반 시스템 전반의 유지보수, 성능 개선 및 신규
-                      기능 개발 리딩
+                      <span class="font-weight-bold">정기점검 모듈 개선</span>: 기존 수기 입력 방식으로 인한 오류를 줄이기 위해 
+                      <a href=https://www.notion.so/CIS-2-UI-UX-1ae6aba52d458082b2afde4fcf717e6a?pvs=4" target="_blank">점검주기 자동 계산</a>, 
+                      <a href="https://www.notion.so/CIS-1ac6aba52d45809a926bc2ac0558b3c3?pvs=21" target="_blank">상태 시각화</a> 기능 도입.
                     </li>
                     <li>
-                      설계 및 구현: 신규 '정기 점검 관리' 모듈 전체 기능 (점검 주기
-                      설정, 항목 관리, 결과 기록/조회 등)
+                      <span class="font-weight-bold">UI/UX 리팩토링</span>: 
+                      <a href="https://www.notion.so/CIS-UX-1b66aba52d4580ad8893d54ab82f3955" target="_blank">버튼 조건 분리 및 날짜 자동 설정</a>으로 사용자의 실수 가능성을 낮추고,
+                      알럿/툴팁을 활용한 저장 UX 개선.
                     </li>
                     <li>
-                      개선: 기존 핵심 기능(엔지니어 활동 관리 등) 안정화 및 사용자
-                      피드백 기반 기능
-                    </li>
-                    <li>
-                      개선 적용: RxJS 활용 비동기/데이터 스트림 관리 및 Angular
-                      서비스를 통한 상태/비즈니스 로직 구현
-                    </li>
-                    <li>
-                      구축: Ant Design기반 반응형 UI/UX (기존 화면 개선 및 신규 기능
-                      적용), 데이터 시각화
+                      <span class="font-weight-bold">컴포넌트 분리 및 재사용</span>: Angular + RxJS 기반의 상태 관리 체계를 설계하고, 점검 항목 컴포넌트를 독립화해 유지보수성과 확장성 확보.
                     </li>
                   </ul>
                 </div>
@@ -124,7 +117,7 @@
                 <div>
                   <span class="tech-stack">Angular</span>
                   <span class="tech-stack">RxJS</span>
-                  <span class="tech-stack">Ant Design(Ng-Zorro)</span>
+                  <span class="tech-stack">Ng-Zorro (Ant Design for Angular)</span>
                   <span class="tech-stack">Figma</span>
                 </div>
               </div>
@@ -160,21 +153,25 @@
                   <div>
                     <ul>
                       <li>
-                        아키텍처 설계 및 구축: KICE 교육데이터 포털 아키텍처 설계, React/Next.js 기반 SSR 적용으로 데이터 처리 속도 및 안정성 향상
+                        <span class="font-weight-bold">라우팅 및 초기 렌더링 대응</span>: 
+                        파일 기반 라우팅과 Next.js 내장 서버 사이드 기능</a>을 활용해 
+                        탭·디테일 화면 등 데이터가 많은 구간의 초기 렌더링 속도를 개선
                       </li>
                       <li>
-                        엔드투엔드 리딩: 다중 코드북 변수탭, 메타데이터 UX, 관리자 공지/팝업 쿠키 제어 등 주요 기능의 기획·설계·개발
+                        <span class="font-weight-bold">대용량 데이터 대응</span>: 다양한 <a href="https://www.notion.so/Tab-Tab-1296aba52d458011a87fe30f721d5f96?pvs=4" target="_blank">코드북 구조</a>에 따라 
+                        복잡한 통계 및 문서 자료를 시각화하고, 전체 검색 기능을 통해 정보 접근성을 향상
                       </li>
                       <li>
-                        구현: 통계 자료 기반 데이터 처리 및 시각화, 문서 변환 결과 화면화, 전체 자료/변수 검색 기능 개발
+                        <span class="font-weight-bold">UX 개선 및 퍼블리싱</span>: 
+                        <a href="https://www.notion.so/12f6aba52d45805c879fe6d1905a9d83?pvs=4" target="_blank">Tailwind CSS 기반의 반응형 레이아웃</a> 구현, 
+                        쿠키 기반 팝업 제어 및 관리자 화면의 UI를 직접 설계·개발하여 사용성 제고
                       </li>
                       <li>
-                        개발: Tailwind CSS 활용 반응형 UI, 관리자 페이지 기능 개발
-                      </li>
-                      <li>
-                        문제 해결 및 배포: FormData 구조 개선으로 첨부파일 유지 문제 해결, 도커 기반 배포 경험
+                        <span class="font-weight-bold">배포 환경 구성</span>: <a href="https://www.notion.so/1-with-docker-10e6aba52d4580e69a91c5c6f8b7fc84?pvs=4" target="_blank">도커</a>를 활용해 프론트엔드 애플리케이션을 이미지화하고, 
+                        사내 배포 환경에 맞게 설정·배포를 주도하여 배포 프로세스 안정화
                       </li>
                     </ul>
+                    
                   </div>
                 </div>
             
@@ -187,15 +184,6 @@
                     <span class="tech-stack">Flowbite</span>
                     <span class="tech-stack">ReactQuill</span>
                     <span class="tech-stack">Docker</span>
-                  </div>
-                </div>
-            
-                <div class="work-role">
-                  <div>링크</div>
-                  <div>
-                    <a href="https://www.notion.so/KICE-1336aba52d4580848809d3037482f02e?pvs=21" target="_blank">
-                      KICE관련 개발 기록 링크(바로가기)
-                    </a>
                   </div>
                 </div>
               </div>
@@ -219,22 +207,11 @@
                   <div>주요 성과 및 업무</div>
                   <div>
                     <ul>
-                      <li>
-                        개발: 신규 페이지 및 UI 다수 설계/개발 (Tree UI, 프로그램 룰
-                        관리, 규제 신고 센터, 설문 동기화 등)
-                      </li>
-                      <li>
-                        최적화: Tree UI 비동기 데이터 처리로 대규모 데이터 로딩 성능
-                        개선, HttpClient 기반 RESTful API 통신 최적화
-                      </li>
-                      <li>
-                        개선: 조건/규칙 기반 동적 UI 구현으로 사용자 편의성 증대,
-                        데이터 처리 흐름 시각화로 UX 개선
-                      </li>
-                      <li>
-                        협업: 백엔드팀과 API 설계/최적화, 디자이너와 Ant
-                        Design/PrimeNg 기반 UI 구현
-                      </li>
+                      <li><a href="https://www.notion.so/319fcb71ace343cdaaa86c4688f6ab62?pvs=4" target="_blank">규제신고센터</a>, <a href="https://www.notion.so/467a848b6ed34bf7947cb721d1d66c97?pvs=4" target="_blank">프로그램 룰관리</a> Tree 등 업무 특화 UI 신규 설계/개발</li>
+                      <li><a href="https://www.notion.so/610dcbeb8f3041a1bf053a34c4171524?pvs=4" target="_blank">조건 기반 비동기 로딩</a>: 공급시기(시작일·종료일)가 입력되지 않으면 곡종 필드가 비활성화되고, 설정된 날짜를 기준으로 해당 기간 내 곡종만을 API로 호출하여 불필요한 데이터 로딩을 방지하고 초기 렌더링 성능을 개선함</li>
+
+                      <li>사용자 조건에 따른 <a href="https://www.notion.so/Button-2bc7f712b9b64e4589f25776670cbec3?pvs=4" target="_blank">버튼 제어 및 유효성 리팩토링</a>으로 UX 개선</li>
+                      <li>REST API 설계 협업 및 Ant Design/PrimeNG UI 컴포넌트</a>구현</li>
                     </ul>
                   </div>
                 </div>
@@ -253,7 +230,7 @@
                   <div>링크</div>
                   <div>
                     <a href="https://www.notion.so/31f679ad3c8447dc8d771d62b078ff74?pvs=21" target="_blank">
-                      신규페이지 구축 개발 기록 링크(바로가기)
+                      한국쌀가공협회 공급관리 개발 링크(바로가기)
                     </a>
                   </div>
                 </div>
@@ -278,16 +255,9 @@
                   <div>주요 성과 및 업무</div>
                   <div>
                     <ul>
-                      <li>
-                        개발: Vue.js 기반 반응형 인터페이스 및 대시보드(Chart.js 활용)
-                        포함 총 9개 페이지 구현
-                      </li>
-                      <li>
-                        구현: 삼성화재 UX 규격 준수, 발생 메시지
-                        상태별(정보/경고/심각) 테이블 알림 기능, 아코디언 UI, 모달 창
-                        등 구현
-                      </li>
-                      <li>활용: 자체 프레임워크(넥서스) 환경 개발 경험</li>
+                      <li>사내 전용 프레임워크(Nexus) 및 Vue2 기반 환경에 적응하며, 9개 주요 페이지의 반응형 UI 및 대시보드 구축</li>
+                      <li><span class="font-weight-bold">알림 메시지 시각화</span>: 발생 이벤트의 심각도(정보/경고/심각)를 구분하는 시각 요소 도입으로 실시간 알림 가독성 개선</li>
+                      <li><span class="font-weight-bold">제한된 검색/문서 접근 환경 속 학습 극복</span>: 내부 보안 정책으로 인해 외부 검색이 어려운 상황에서도 키워드 검색 + 자체 정리 방식으로 기술 역량 확보</li>
                     </ul>
                   </div>
                 </div>
@@ -323,18 +293,9 @@
                   <div>주요 성과 및 업무</div>
                   <div>
                     <ul>
-                      <li>
-                        구현: Figma 디자인 기반 웹 화면 구현, 미디어쿼리 활용 반응형
-                        레이아웃 구축
-                      </li>
-                      <li>
-                        적용: Bootstrap 활용 동적/시각적 요소 구현, Thymeleaf 활용
-                        서버 사이드 동적 메뉴 생성
-                      </li>
-                      <li>
-                        개선: 홈 화면 등 주요 UI 컴포넌트화 및 재사용성 증대, 품평회
-                        페이지 등 유지보수 진행
-                      </li>
+                      <li><span class="font-weight-bold">웹 접근성 개선</span>: 반응형 미디어쿼리 설계, Figma 기반 HTML/CSS 구현</li>
+                      <li><span class="font-weight-bold">사용자 경험 강화</span>: Bootstrap 기반 컴포넌트 커스터마이징 및 동적 메뉴 구현</li>
+                      <li><span class="font-weight-bold">관리 편의성</span>: Thymeleaf 템플릿 엔진 적용으로 동적 메뉴 및 재사용 컴포넌트 설계</li>
                     </ul>
                   </div>
                 </div>
