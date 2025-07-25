@@ -44,6 +44,14 @@
             </li>
           </ul>
         </div>
+        
+        <!-- PDF 다운로드 버튼 - 오른쪽 분리 -->
+        <div class="nav__pdf">
+          <button class="nav__link pdf-download-btn" onclick="downloadPDF()" title="PDF로 다운로드">
+            <i class="fa-solid fa-file-pdf"></i> PDF 다운로드
+          </button>
+        </div>
+        
         <div class="nav__toggle" id="nav-toggle">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -122,14 +130,14 @@
                 </div>
               </div>
 
-              <div class="work-role">
+              <!-- <div class="work-role">
                 <div>링크</div>
                 <div>
                   <a href="https://www.notion.so/CIS-1e76aba52d458062b9eee26179b644e7?pvs=21" target="_blank">
                     CIS 개발 기록 링크(바로가기)
                   </a>
                 </div>
-              </div>
+              </div> -->
             </div>
               
             </article>
@@ -226,14 +234,14 @@
                   </div>
                 </div>
             
-                <div class="work-role">
+                <!-- <div class="work-role">
                   <div>링크</div>
                   <div>
                     <a href="https://www.notion.so/31f679ad3c8447dc8d771d62b078ff74?pvs=21" target="_blank">
                       한국쌀가공협회 공급관리 개발 링크(바로가기)
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </article>
 
@@ -429,15 +437,15 @@
 
     <footer class="footer">
       <div class="footer__social">
-        <!-- 노션 아이콘 -->
+        <!-- 블로그 아이콘 -->
         <a
-          href="https://www.notion.so/Develop-List-43a42ab9966f4e068f57058d7b50b725"
+          href="https://codedot-blog.vercel.app/"
           target="_blank"
-          title="노션 링크"
+          title="블로그 링크"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-notion footer__icon"
+            class="icon icon-tabler icon-tabler-article footer__icon"
             width="44"
             height="44"
             viewBox="0 0 24 24"
@@ -448,12 +456,10 @@
             stroke-linejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M11 17.5v-6.5h.5l4 6h.5v-6.5" />
-            <path
-              d="M19.077 20.071l-11.53 .887a1 1 0 0 1 -.876 -.397l-2.471 -3.294a1 1 0 0 1 -.2 -.6v-10.741a1 1 0 0 1 .923 -.997l11.389 -.876a2 2 0 0 1 1.262 .33l1.535 1.023a2 2 0 0 1 .891 1.664v12.004a1 1 0 0 1 -.923 .997z"
-            />
-            <path d="M4.5 5.5l2.5 2.5" />
-            <path d="M20 7l-13 1v12.5" />
+            <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+            <path d="M7 8h10" />
+            <path d="M7 12h10" />
+            <path d="M7 16h10" />
           </svg>
         </a>
 

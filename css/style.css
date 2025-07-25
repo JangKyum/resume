@@ -112,6 +112,15 @@ body {
   height: var(--header-height);
 }
 
+.nav__menu {
+  flex: 1;
+}
+
+.nav__pdf {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
 .nav__list {
   display: flex;
 }
@@ -514,6 +523,10 @@ body {
     transition: 0.2s;
   }
 
+  .nav__pdf {
+    margin-right: 0.5rem;
+  }
+
   .nav__list {
     display: block;
   }
@@ -697,5 +710,322 @@ body {
 
   .education__details ul {
     text-align: left;
+  }
+}
+
+/* PDF 다운로드 버튼 스타일 */
+.pdf-download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.pdf-download-btn:hover {
+  color: var(--newBlue-color);
+}
+
+.pdf-download-btn i {
+  margin-right: 0.3rem;
+}
+
+/* PDF 버튼은 active-link 효과 제외 */
+.pdf-download-btn:hover::after {
+  display: none;
+}
+
+/* PDF 출력을 위한 미디어 쿼리 */
+@media print {
+  /* 헤더와 푸터 숨기기 */
+  .header,
+  .footer {
+    display: none !important;
+  }
+
+  /* 배경색 제거 */
+  .bg-lightBlue,
+  .bg-trey-1 {
+    background-color: white !important;
+  }
+
+  /* 페이지 여백 조정 */
+  body {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-top: 0 !important;
+  }
+
+  /* 페이지 크기 설정 */
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+
+  /* 모든 섹션 간격 완전 제거 - 기존 calc 값 덮어쓰기 */
+  .section,
+  section.section,
+  .home.section.bg-lightBlue,
+  .about.section,
+  .skills.section.bg-lightBlue,
+  .education.section {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    page-break-inside: avoid;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* 홈 섹션을 매우 컴팩트하게 */
+  .home.section {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 150px !important;
+  }
+
+  .home__container {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .home__data {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Work Experience 섹션 바로 이어지도록 */
+  .about.section {
+    padding: 0 !important;
+    margin: 0 !important;
+    page-break-before: auto !important;
+  }
+
+  /* 모든 컨테이너 간격 최소화 */
+  .container {
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  /* 홈 제목을 매우 컴팩트하게 */
+  .home__title {
+    font-size: 16px !important;
+    margin: 0 0 0.1rem 0 !important;
+    line-height: 1.2 !important;
+  }
+
+  /* 홈 텍스트를 매우 컴팩트하게 */
+  .home__texts {
+    font-size: 10px !important;
+    margin: 0.1rem 0 0.8rem 0 !important;
+    line-height: 1.3 !important;
+  }
+
+  /* 섹션 제목 스타일 조정 */
+  .section__title {
+    font-size: 14px !important;
+    margin: 0.3rem 0 0.4rem 0 !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2rem;
+    line-height: 1.2 !important;
+  }
+
+  /* Skills 섹션 최적화 - 중복 제거하고 통합 */
+  /* Skills 섹션 상단 간격 추가 */
+  #skills .section__title {
+    margin-top: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  /* Education 섹션 상단 간격 추가 */
+  #education .section__title {
+    margin-top: 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  /* Work Experience 제목 간격 */
+  #work .section__title {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  /* Work Experience 첫 번째 컨테이너 간격 제거 */
+  #work .container:first-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Work Experience 섹션 간격 */
+  .about__subtitle {
+    margin: 0.3rem 0 0.8rem 0 !important;
+    font-size: 12px;
+  }
+
+  .about_text {
+    margin-bottom: 1rem;
+  }
+
+  /* Work Experience 마지막 항목 하단 간격 추가 */
+  .about_text:last-of-type {
+    margin-bottom: 1.3rem !important;
+  }
+
+  .work-period {
+    padding: 0.6rem;
+    font-size: 11px;
+  }
+
+  .work-padding {
+    padding: 0.8rem;
+  }
+
+  .work-role {
+    grid-template-columns: 100px 1fr;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 10px;
+  }
+
+  /* Skills 컨테이너 */
+  .skills__container {
+    grid-template-columns: 1fr !important;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem !important;
+  }
+
+  /* Skills 이미지 완전히 숨기기 */
+  .skills__img {
+    display: none !important;
+  }
+
+  .skills__category {
+    padding: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .skills__category-title {
+    font-size: 10px;
+    margin-bottom: 0.2rem;
+  }
+
+  .skills__tag {
+    font-size: 8px;
+    padding: 1px 4px;
+    margin: 1px;
+  }
+
+  /* Education 섹션 조정 */
+  .education__item {
+    margin-bottom: 0.8rem;
+  }
+
+  .education__period {
+    padding: 0.6rem;
+    font-size: 11px;
+  }
+
+  .education__name {
+    font-size: 10px;
+    margin-bottom: 0.3rem;
+  }
+
+  .education__details {
+    font-size: 9px;
+  }
+
+  /* 기술 스택 태그 스타일 조정 */
+  .tech-stack {
+    display: inline-block;
+    margin: 1px;
+    padding: 1px 4px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 8px;
+  }
+
+  /* 링크 스타일 조정 */
+  a {
+    color: #000;
+    text-decoration: underline;
+    font-size: inherit;
+  }
+
+  /* 리스트 간격 조정 */
+  .about_text li {
+    margin-bottom: 0.2rem;
+    font-size: 9px;
+    line-height: 1.3;
+  }
+
+  .education__details li {
+    margin-bottom: 0.2rem;
+    font-size: 9px;
+    line-height: 1.3;
+  }
+
+  /* 불필요한 요소 숨기기 */
+  .nav__toggle {
+    display: none;
+  }
+
+  /* 페이지 나누기 방지 */
+  .home.section {
+    page-break-after: avoid !important;
+  }
+
+  .about.section {
+    page-break-before: avoid !important;
+  }
+
+  .about_text {
+    page-break-inside: avoid;
+  }
+
+  .education__item {
+    page-break-inside: avoid;
+  }
+
+  /* 월 표시 간격 조정 */
+  .months {
+    font-size: 9px;
+  }
+
+  /* 메인 태그 간격 제거 */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 배경색이 있는 섹션의 패딩 강제 제거 */
+  .bg-lightBlue.section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 홈 섹션과 Work Experience 사이 간격 완전 제거 */
+  .home.section + .about.section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* 강제로 첫 번째 페이지에 모든 내용 배치 시도 */
+  .home.section,
+  .about.section {
+    page-break-inside: avoid;
+    page-break-after: avoid;
   }
 }
