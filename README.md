@@ -1,10 +1,12 @@
-# 💼 Portfolio Overview
+# 💼 Resume Overview
 
-이 포트폴리오는 프론트엔드 개발자 김장겸의 프로젝트 경험과 기술 역량을 직관적으로 보여주기 위해 제작되었습니다.  
+이 Resume은 프로젝트 경험과 기술 역량을 직관적으로 보여주기 위해 제작되었습니다.  
 **Home / Work Experience / Skills / Education** 섹션으로 구성되어 있으며,<br/>
 사용자 중심의 깔끔한 UI와 스크롤 효과를 통해 정보 전달력을 높였습니다.
 
-📌 포트폴리오 바로가기: [https://jangkyum.github.io/resume/](https://jangkyum.github.io/resume/)
+- 📌 Resume 바로가기: [https://jangkyum.github.io/resume/](https://jangkyum.github.io/resume/)
+- 📌 포트폴리오 바로가기: [https://jk-pf.vercel.app/](https://jk-pf.vercel.app/)
+
 
 ---
 
@@ -47,7 +49,7 @@
 ## 🔗 외부 링크
 
 - GitHub: [https://github.com/codedot28](https://github.com/codedot28)
-- Notion 기록: [https://www.notion.so/Develop-List](https://www.notion.so/Develop-List-43a42ab9966f4e068f57058d7b50b725?pvs=21)
+- 개인 블로그: [https://codedot-blog.vercel.app/](https://codedot-blog.vercel.app/)
 
 ---
 
